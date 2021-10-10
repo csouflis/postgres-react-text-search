@@ -24,7 +24,7 @@ app.get("/users", async (req, res) => {
       [`%${name}%`]
     );
 
-    //Below is EVIL CODE (this is what we go over in the last section to learn about SQL injection)
+    //Below is EVIL CODE (SQL injection)
 
     // const users = await pool.query(
     //   `SELECT * FROM users WHERE first_name || ' ' || last_name ILIKE '% ${name}%'`
