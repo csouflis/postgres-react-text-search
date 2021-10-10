@@ -87,13 +87,21 @@ Update node to the most recent version:
       ```sh
    cd repo
    ```
-   
+<br/>
+       
 2. You may have to install react-scripts. Do this by 
 	 ```sh
    npm i -g react-scripts
    ```
-
-3. For frontend and backend, get/install all packages for each (while in their directory): 
+    <br/>
+    
+3. Create database in PostgreSQL - use the [database.sql](backend/database.sql) commands once in psql CLI. Create database partydb, create table users, and insert all users. Copy and paste from document. You can double-check you have 500 users with:
+	 ```sh
+   SELECT COUNT(*) FROM users;
+   ```
+    <br/>
+    
+4. For frontend and backend, get/install all packages for each (while in their directory): 
 	 ```sh
    yarn
    ```
@@ -101,8 +109,15 @@ Update node to the most recent version:
    	 ```sh
    npm install
    ```
-
-4. Run backend and frontend with: 
+    <br/>
+    
+5. Run backend with: 
+   ```sh
+   node index
+   ```
+    <br/>
+    
+6. Run frontend with: 
    ```sh
    yarn start
    ```
